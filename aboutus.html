@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - SportsTXT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .masthead {
+            background: url('about-banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+        .masthead::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .masthead h1 {
+            position: relative;
+            z-index: 2;
+            color: #d11717;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0056b3;
+        }
+        .cta-block, .footer {
+            background-color: #222;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #b90d0d;
+            border-color: #cc3700;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #cc3700;
+        }
+        .key-people img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #df4811 !important;
+        }
+        .nav-link:hover {
+            color: #c73500 !important;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="text-danger">Sports</span><span class="text-primary">TXT</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Masthead -->
+    <header class="masthead" style="background-image: url('pic1.webp');">
+        <div class="container px-10 text-white">
+            <h1 class="display-1 lh-1 mb-3">
+                <span class="text-danger">About</span> <span class="text-primary">Us</span>
+            </h1>
+        </div>
+    </header>
+  
+    <!-- About Us Section -->
+    <section id="about-us" class="container py-5">
+        <h2 class="section-title"><i class="fas fa-users"></i> Who We Are</h2>
+        <p>SportsTXT is an initiative from NMS Productions BV, a division of New Media Services, a global company specializing in delivering intelligent outsourcing services through a combination of machine learning and human-powered activities.</p>
+        <p>From fans to brands to individual content creators, NMSP designs and builds collaborative online platforms for our users to communicate, connect, learn, and share.</p>
+    </section>
+    
+    <!-- Key People Section -->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title"><i class="fas fa-user"></i> Key People</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img src="img.jpeg" alt="Jane Smith" />
+                        <h4>Jane Smith</h4>
+                        <p class="text-muted">Lead Designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img src="img.jpeg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img src="img.jpeg" alt="Michael Brown" />
+                        <h4>Michael Brown</h4>
+                        <p class="text-muted">Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Block -->
+    <section id="contact" class="cta-block">
+        <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
+        <p>Build a Unified Community with SportsTXT</p>
+        <a href="#contact-form" class="btn btn-primary">Contact Us</a>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SportsTXT | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="contact.html">Contact Us</a></p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

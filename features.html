@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Features - SportsTXT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .masthead {
+            background: url('about-banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+        .masthead::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .masthead h1 {
+            position: relative;
+            z-index: 2;
+            color: #d11717;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0056b3;
+        }
+        .cta-block, .footer {
+            background-color: #222;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #b90d0d;
+            border-color: #cc3700;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #cc3700;
+        }
+        .key-people img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #df4811 !important;
+        }
+        .nav-link:hover {
+            color: #c73500 !important;
+        }
+    </style>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="text-danger">Sports</span><span class="text-primary">TXT</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Masthead -->
+    <header class="masthead" style="background-image: url('pic1.webp');">
+        <div class="container px-10 text-white">
+            <h1 class="display-1 lh-1 mb-3">
+                <span class="text-danger">Feat</span><span class="text-primary">ures</span>
+            </h1>
+        </div>
+    </header>
+  
+    <!-- Features Section -->
+    <section id="features" class="container py-5">
+        <h2 class="section-title">What We Offer</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Fanzone</h3>
+                <p>Empower your supporters in the Fanzone, a moderated platform for interaction and involvement.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Video</h3>
+                <p>Offer workouts, interviews, live matches, and behind-the-scenes content to your members.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Podcasts</h3>
+                <p>Record and share weekly updates, interviews, or tips with your community.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>SMS</h3>
+                <p>Send personalized updates directly to your fans' phones.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Photo</h3>
+                <p>Publish unlimited photos from games, training sessions, or events with customizations.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Polls</h3>
+                <p>Engage fans with real-time feedback, quizzes, and voting features.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Block -->
+    <section id="contact" class="cta-block">
+        <h2>Get in Touch</h2>
+        <p>Build a Unified Community with SportsTXT</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SportsTXT | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Contact Us</a></p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

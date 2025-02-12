@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - SportsTXT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .masthead {
+            background: url('about-banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+        .masthead::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .masthead h1 {
+            position: relative;
+            z-index: 2;
+            color: #d11717;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0056b3;
+        }
+        .cta-block, .footer {
+            background-color: #222;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #b90d0d;
+            border-color: #cc3700;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #cc3700;
+        }
+        .key-people img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #df4811 !important;
+        }
+        .nav-link:hover {
+            color: #c73500 !important;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="text-danger">Sports</span><span class="text-primary">TXT</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Masthead -->
+    <header class="masthead" style="background-image: url('pic1.webp');">
+        <div class="container px-10 text-white">
+            <h1 class="display-1 lh-1 mb-3">
+                <span class="text-danger">Contact</span> <span class="text-primary">Us</span>
+            </h1>
+        </div>
+    </header>
+  
+    <!-- Amsterdam Office Section -->
+    <section class="container py-5">
+        <h2 class="section-title text-center mb-4">Amsterdam Office</h2>
+        <div class="text-center mb-3">
+            <p class="mt-2">NMS PRODUCTIONS EUROPE B.V.Herengracht 257, 1016 BJ,
+                Amsterdam, The Netherlands</p>
+            <img src="logo.png" alt="Amsterdam Office" class="img-fluid">
+            <p class="mt-2">NMS PRODUCTIONS EUROPE B.V.</p>
+        </div>
+     
+    </section>
+    
+    
+    
+<!-- Contact Form Section -->
+<section class="container py-5" style="background-color: #f8f9fa;">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg p-4 border-0">
+                <h2 class="section-title text-center mb-4"><i class="fas fa-envelope"></i> Get in Touch</h2>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label"><i class="fas fa-users"></i> Name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-3 shadow-sm" id="name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control rounded-3 shadow-sm" id="email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label"><i class="fas fa-phone"></i> Phone</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-3 shadow-sm" id="phone">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="industry" class="form-label"><i class="fas fa-briefcase"></i> Industry</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-3 shadow-sm" id="industry">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <label for="message" class="form-label"><i class="fas fa-comment"></i> Message</label>
+                        <textarea class="form-control rounded-3 shadow-sm" id="message" rows="4" required></textarea>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg px-4 py-2"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SportsTXT | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="contact.html">Contact Us</a></p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
