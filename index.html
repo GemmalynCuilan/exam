@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SportsTXT - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="css/styles.css" rel="stylesheet" />
     <style>
         body {
@@ -82,6 +83,29 @@
         .nav-link:hover {
             color: #c73500 !important;
         }
+        #mission {
+        background-color: #005BAC;
+        padding: 80px 0;
+        position: relative;
+       }
+        .mission-card {
+        background: rgba(255, 255, 255, 0.9); 
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+        color: #005BAC; 
+        font-weight: bold;
+        }
+        .text {
+        color: #005BAC; 
+        }
+        .card img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -90,7 +114,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div class="container px-5">
             <a class="navbar-brand fw-bold" href="index.html">
-                <span class="text-danger">Sports</span><span class="text-primary">TXT</span>
+                <span class="text-danger">Sports</span><span class="text">TXT</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -131,9 +155,19 @@
         <p>Being a sports fan is not just about watching games. SportsTXT is an online platform designed to deliver the ultimate sports fan experience.</p>
     </section>
     
-    <section id="mission" class="container py-5">
-        <h2 class="section-title">Our Mission</h2>
-        <p>Our mission is to provide our users with a seamless and enjoyable online experience...</p>
+    <section id="mission" class="container-fluid py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card mission-card text-center">
+                        <div class="card-body">
+                            <h1 class="card-title" >Our Mission</h1>
+                            <p class="card-text">Our mission is to provide our users with a seamless and enjoyable online experience, combining innovation and accessibility to create platforms that connect and engage communities worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
     <section id="platform" class="container py-5">
@@ -142,32 +176,78 @@
     </section>
     
     <section class="container py-5">
-        <h2 class="section-title">The Platform of Firsts</h2>
+        <h2 class="section-title">The Platform of Firsts</h2> 
         <div class="row">
             <div class="col-md-6">
-                <h3>Members First</h3>
-                <p>SportsTXT brings your members straight into the heart of your club...</p>
+                <div class="card mb-4">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-6">
+                            <img src="1st.jpeg" class="img-fluid rounded-start" alt="Members First">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">Members First</h3>
+                                <p class="card-text">SportsTXT brings your members straight into the heart of your club...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             <div class="col-md-6">
-                <h3>Safety First</h3>
-                <p>SportsTXT offers 24/7 protection for sports clubs...</p>
+                <div class="card mb-4">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-6">
+                            <img src="safety.jpeg" class="img-fluid rounded-start" alt="Safety First">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">Safety First</h3>
+                                <p class="card-text">SportsTXT offers 24/7 protection for sports clubs...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
         <div class="row mt-4">
             <div class="col-md-6">
-                <h3>Data First</h3>
-                <p>Contrary to social media, you have full ownership of your data...</p>
+                <div class="card mb-4">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-6">
+                            <img src="data.jpg" class="img-fluid rounded-start" alt="Data First">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">Data First</h3>
+                                <p class="card-text">Contrary to social media, you have full ownership of your data...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+    
             <div class="col-md-6">
-                <h3>Value First</h3>
-                <p>By making a few small tweaks, you can significantly boost your profits...</p>
+                <div class="card mb-4">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-6">
+                            <img src="value.jpg" class="img-fluid rounded-start" alt="Value First">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">Value First</h3>
+                                <p class="card-text">By making a few small tweaks, you can significantly boost your profits...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
     <!-- CTA Block -->
     <section id="contact" class="cta-block">
-        <h2>Get in Touch</h2>
+        <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
         <p>Build a Unified Community with SportsTXT</p>
         <a href="contact.html" class="btn btn-primary">Contact Us</a>
     </section>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Features - SportsTXT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -38,7 +39,7 @@
             margin-bottom: 40px;
             font-size: 2rem;
             font-weight: bold;
-            color: #0056b3;
+            color: #0056b3; 
         }
         .cta-block, .footer {
             background-color: #222;
@@ -81,6 +82,17 @@
         .nav-link:hover {
             color: #c73500 !important;
         }
+        .card-title {
+        color: #005BAC; 
+        font-weight: bold;
+        }
+        .text {
+        color: #005BAC; 
+        }
+        .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
     </style>
 <body>
     
@@ -88,7 +100,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div class="container px-5">
             <a class="navbar-brand fw-bold" href="index.html">
-                <span class="text-danger">Sports</span><span class="text-primary">TXT</span>
+                <span class="text-danger">Sports</span><span class="text">TXT</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -109,49 +121,86 @@
     <header class="masthead" style="background-image: url('pic1.webp');">
         <div class="container px-10 text-white">
             <h1 class="display-1 lh-1 mb-3">
-                <span class="text-danger">Feat</span><span class="text-primary">ures</span>
+                <span class="text-danger">Feat</span><span class="text">ures</span>
             </h1>
         </div>
     </header>
   
     <!-- Features Section -->
-    <section id="features" class="container py-5">
-        <h2 class="section-title">What We Offer</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Fanzone</h3>
-                <p>Empower your supporters in the Fanzone, a moderated platform for interaction and involvement.</p>
-            </div>
-            <div class="col-md-6">
-                <h3>Video</h3>
-                <p>Offer workouts, interviews, live matches, and behind-the-scenes content to your members.</p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h3>Podcasts</h3>
-                <p>Record and share weekly updates, interviews, or tips with your community.</p>
-            </div>
-            <div class="col-md-6">
-                <h3>SMS</h3>
-                <p>Send personalized updates directly to your fans' phones.</p>
+<section id="features" class="container py-5">
+    <h1 class="section-title text-center mb-4"><i class="fas fa-envelope"></i>What We Offer</h1>
+    <div class="row g-4">
+        <!-- Fanzone -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="fanzone.jpg" class="card-img-top" alt="Fanzone">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Fanzone</h4>
+                    <p class="card-text">Empower your supporters in the Fanzone, a moderated platform for interaction and involvement.</p>
+                </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h3>Photo</h3>
-                <p>Publish unlimited photos from games, training sessions, or events with customizations.</p>
-            </div>
-            <div class="col-md-6">
-                <h3>Polls</h3>
-                <p>Engage fans with real-time feedback, quizzes, and voting features.</p>
+
+        <!-- Video -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="video.jpg" class="card-img-top" alt="Video">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Video</h4>
+                    <p class="card-text">Offer workouts, interviews, live matches, and behind-the-scenes content to your members.</p>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Podcasts -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="podcasts.jpg" class="card-img-top" alt="Podcasts">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Podcasts</h4>
+                    <p class="card-text">Record and share weekly updates, interviews, or tips with your community.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SMS -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="sms.webp" class="card-img-top" alt="SMS">
+                <div class="card-body text-center">
+                    <h4 class="card-title">SMS</h4>
+                    <p class="card-text">Send personalized updates directly to your fans' phones.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="photo.webp" class="card-img-top" alt="Photo">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Photo</h4>
+                    <p class="card-text">Publish unlimited photos from games, training sessions, or events with customizations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Polls -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="polls.png" class="card-img-top" alt="Polls">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Polls</h4>
+                    <p class="card-text">Engage fans with real-time feedback, quizzes, and voting features.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     
     <!-- CTA Block -->
     <section id="contact" class="cta-block">
-        <h2>Get in Touch</h2>
+        <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
         <p>Build a Unified Community with SportsTXT</p>
         <a href="contact.html" class="btn btn-primary">Contact Us</a>
     </section>

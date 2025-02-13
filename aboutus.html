@@ -39,7 +39,7 @@
             margin-bottom: 40px;
             font-size: 2rem;
             font-weight: bold;
-            color: #0056b3;
+            color: #005BAC;
         }
         .cta-block, .footer {
             background-color: #222;
@@ -82,6 +82,13 @@
         .nav-link:hover {
             color: #c73500 !important;
         }
+        .card-title {
+        color: #005BAC; 
+        font-weight: bold;
+        }
+        .text {
+        color: #005BAC; 
+        }
     </style>
 </head>
 <body>
@@ -90,7 +97,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div class="container px-5">
             <a class="navbar-brand fw-bold" href="index.html">
-                <span class="text-danger">Sports</span><span class="text-primary">TXT</span>
+                <span class="text-danger">Sports</span><span class="text">TXT</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -111,17 +118,27 @@
     <header class="masthead" style="background-image: url('pic1.webp');">
         <div class="container px-10 text-white">
             <h1 class="display-1 lh-1 mb-3">
-                <span class="text-danger">About</span> <span class="text-primary">Us</span>
+                <span class="text-danger">About</span> <span class="text">Us</span>
             </h1>
         </div>
     </header>
   
     <!-- About Us Section -->
     <section id="about-us" class="container py-5">
-        <h2 class="section-title"><i class="fas fa-users"></i> Who We Are</h2>
-        <p>SportsTXT is an initiative from NMS Productions BV, a division of New Media Services, a global company specializing in delivering intelligent outsourcing services through a combination of machine learning and human-powered activities.</p>
-        <p>From fans to brands to individual content creators, NMSP designs and builds collaborative online platforms for our users to communicate, connect, learn, and share.</p>
+        <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-lg-6">
+                <h2 class="section-title"><i class="fas fa-users"></i> Who We Are</h2>
+                <p>SportsTXT is an initiative from NMS Productions BV, a division of New Media Services, a global company specializing in delivering intelligent outsourcing services through a combination of machine learning and human-powered activities.</p>
+                <p>From fans to brands to individual content creators, NMSP designs and builds collaborative online platforms for our users to communicate, connect, learn, and share.</p>
+            </div>
+            <!-- Image Column -->
+            <div class="col-lg-6 text-center text-lg-end mt-4 mt-lg-0">
+                <img src="sports.png" alt="Who We Are" class="img-fluid rounded">
+            </div>
+        </div>
     </section>
+    
     
     <!-- Key People Section -->
     <section class="page-section bg-light" id="team">
@@ -132,22 +149,22 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img src="img.jpeg" alt="Jane Smith" />
-                        <h4>Jane Smith</h4>
+                        <img src="red.png" alt="Jane Smith" />
+                        <h4 class="card-title">Jane Smith</h4>
                         <p class="text-muted">Lead Designer</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img src="img.jpeg" alt="John Doe" />
-                        <h4>John Doe</h4>
+                        <img src="red.png" alt="John Doe" />
+                        <h4 class="card-title">John Doe</h4>
                         <p class="text-muted">Lead Marketer</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img src="img.jpeg" alt="Michael Brown" />
-                        <h4>Michael Brown</h4>
+                        <img src="red.png" alt="Michael Brown" />
+                        <h4 class="card-title">Michael Brown</h4>
                         <p class="text-muted">Lead Developer</p>
                     </div>
                 </div>
